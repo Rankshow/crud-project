@@ -34,8 +34,8 @@ const PostComment = ({ postId }) => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-
-      { comments && (comments.map((comment) => 
+      { 
+       comments && (comments.map((comment) => 
        (<div className="card mb-3" key={comment.id}>
         <div className="row g-0">
           <div className="col-md-12">
@@ -49,8 +49,9 @@ const PostComment = ({ postId }) => {
           </div>
         </div>
       </div>
-       ) ))
+       )))
       }
+
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
